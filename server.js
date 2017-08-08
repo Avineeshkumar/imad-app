@@ -49,7 +49,6 @@ var htmlTemplate=`
   <div>
       ${content}
       </div>
-     </div>
     </body>
 </html>
 `;
@@ -60,7 +59,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function (req, res) {
-  res.send(createTemplale(articleOne));
+  res.send(createTemplate(articleOne));
 });
 
 app.get('/article-two', function (req, res) {
