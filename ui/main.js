@@ -1,4 +1,5 @@
 console.log('Loaded!');
 
-var element=document.getElementById('main-text');
+var element=document.getElementById('main-text'
+);
 element.innerHTML="KTK";
