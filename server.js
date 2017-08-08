@@ -13,7 +13,7 @@ var articles= {
     date: 'Aug 4,2017',
     content:
              `<p>
-                  This is the content of my first article.This is the content of my first article.
+                This is the content of my first article.This is the content of my first article.
              </p>
              <p>
                 This is the content of my first article.This is the content of my first article.
@@ -28,13 +28,7 @@ var articles= {
     date: 'Aug 5,2017',
     content:
              `<p>
-                 This is the content of my second article.This is the content of my second article.This is the content of my second article.
-              </p>
-              <p>
-                 This is the content of my second article.This is the content of my second article.This is the content of my second article.
-              </p>
-              <p>
-                 This is the content of my second article.This is the content of my second article.This is the content of my second article.
+                 This is the content of my second article.This is the content of my second article.
               </p>`
 },
 'article-Three':{
@@ -92,7 +86,7 @@ app.get('/', function (req, res) {
 });
 var articleName=req.params.articleName;
 app.get('/:articleName', function (req, res) {
-  res.send(createTemplate(articles(articleName)));
+  res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
