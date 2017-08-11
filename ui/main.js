@@ -1,16 +1,23 @@
-console.log('Loaded!');
+var button=document.getElementById('counter');
 
-var element=document.getElementById('main-text'
-);
-element.innerHTML="KTK";
+button.onclick=function(){
+    
+  var request= new XMLHttpRequest();
+  
+  
+  request.onreadystatechange=function(){
+      if(onreadystatechange === XMLHttpRequest.Done){ 
+          
+          if(request.status === 200){
+              var counter=request.responseText;
+              var span=document.getElementById('count');
+              span.innerHTML=countertoString();
+          }
+  }
+  
+};
 
-var img=document.getElementById('madi');
 
-var marginLeft=1;
-function moveRight() {
-    marginLeft= marginLeft+10;
-    img.style.marginLeft=marginLeft+'px';
-}
-img.onclick=function() {
-    var interval=setInterval(moveRight,50);
+request.open('GET','http://avineeshcse.imad.hasura-app.io/counter');
+request.send(null);
 };
