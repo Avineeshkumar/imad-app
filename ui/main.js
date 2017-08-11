@@ -11,7 +11,7 @@ button.onclick=function(){
           if(request.status === 200){
               var counter=request.responseText;
               var span=document.getElementById('count');
-              span.innerHTML=countertoString();
+              span.innerHTML=counter.toString();
           }
   }
   
