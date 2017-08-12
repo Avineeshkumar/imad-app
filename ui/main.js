@@ -52,3 +52,34 @@ request.open('GET','http://avineeshcse.imad.hasura-app.io/submit-name?name='+nam
 request.send(null);
 
 };
+
+
+var sbt=document.getElementById('sbt1');
+sbt.onclick=function(){
+      var request= new XMLHttpRequest();
+  
+  
+  request.onreadystatechange=function(){
+      if(request.readyState === XMLHttpRequest.DONE){ 
+          
+          if(request.status === 200){
+                var cmts=request.responseText;
+                cmts=JSON.parse(cmts);
+                  var list='';
+                  for(var i=0;i<names.length;i++){
+                      list+='<li>'+ names[i] +'</li>';
+                  }
+                  
+                  var ul=document.getElementById('cmtlist1');
+                  ul.innerHTML=list;
+                          }
+                  }
+  
+};
+
+var cmtInput=document.getElementById('comment1');
+var cmt=cmtInput.value;
+request.open('GET','http://avineeshcse.imad.hasura-app.io/submit-name?name='+name,true);
+request.send(null);
+
+};
