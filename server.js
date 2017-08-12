@@ -28,7 +28,7 @@ var articles= {
              Hey... say something!
              </textarea>
     
-             <input type="submit" value="Submit">
+             <input type="submit" value="Submit id="sbt"">
              `
 },
 'article-two':{
@@ -47,7 +47,7 @@ var articles= {
              Hey... say something!
              </textarea>
     
-             <input type="submit" value="Submit">
+             <input type="submit" value="Submit" id="sbt">
              `   
 },
 'article-three':{
@@ -71,7 +71,7 @@ var articles= {
              Hey... say something!
              </textarea>
     
-             <input type="submit" value="Submit">
+             <input type="submit" value="Submit id="sbt"">
              `            
 }
 };
