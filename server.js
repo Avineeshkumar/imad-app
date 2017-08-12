@@ -110,7 +110,13 @@ var htmlTemplate=`
       </div>
       <h3>Comments</h3>
       <div class="footer">
-      ${comments}
+     
+             <textarea name="comments" id="comments1" style="font-family:sans-serif;font-size:1.2em;">
+             Hey... say something!
+             </textarea>
+    
+             <input type="submit" value="Submit" id="sbt1">
+             <ul id="cmtlist1"></ul>
       </div>
     </body>
 </html>
