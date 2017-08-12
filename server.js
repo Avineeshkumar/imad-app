@@ -41,15 +41,7 @@ var articles= {
                  This is the content of my second article.
                  This is the content of my second article.
               </p>`,
-    comments:
-            `
-            
-             <textarea name="comments" id="comments2" style="font-family:sans-serif;font-size:1.2em;">
-             Hey... say something!
-             </textarea>
     
-             <input type="submit" value="Submit" id="sbt2">
-             <ul id="cmtlist2"></ul>
              `   
 },
 'article-three':{
@@ -66,15 +58,7 @@ var articles= {
                <p>
                This is the content of my third article.This is the content of my third article.
                </p>`,
-    comments:
-            `
-             
-             <textarea name="comments" id="comments3" style="font-family:sans-serif;font-size:1.2em;">
-             Hey... say something!
-             </textarea>
     
-             <input type="submit" value="Submit id="sbt3"">
-             <ul id="cmtlist3"></ul>
              `            
 }
 };
@@ -83,7 +67,7 @@ var title=data.title;
 var date=data.date;
 var heading=data.heading;
 var content=data.content;
-var comments=data.comments;
+
 var htmlTemplate=`
 <html>
 <head>
@@ -108,18 +92,7 @@ var htmlTemplate=`
   <div>
       ${content}
       </div>
-      <h3>Comments</h3>
-      <div class="footer">
-     
-             <textarea name="comments" id="comments1" style="font-family:sans-serif;font-size:1.2em;">
-             Hey... say something!
-             </textarea>
-    
-             <input type="submit" value="Submit" id="sbt1">
-             <ul id="cmtlist1"></ul>
-      </div>
-      <script type="text/javascript" src="/ui/main.js">
-        </script>
+      
     </body>
 </html>
 `;
