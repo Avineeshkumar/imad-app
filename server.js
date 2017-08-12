@@ -118,7 +118,7 @@ var htmlTemplate=`
              <input type="submit" value="Submit" id="sbt1">
              <ul id="cmtlist1"></ul>
       </div>
-      <script type="text1/javascript" src="/ui/main.js">
+      <script type="text/javascript" src="/ui/main.js">
         </script>
     </body>
 </html>
