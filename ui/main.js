@@ -67,8 +67,8 @@ sbt.onclick=function(){
                 var cmts=request.responseText;
                 cmts=JSON.parse(cmts);
                   var list='';
-                  for(var i=0;i<names.length;i++){
-                      list+='<li>'+ names[i] +'</li>';
+                  for(var i=0;i<cmts.length;i++){
+                      list+='<li>'+ cmts[i] +'</li>';
                   }
                   
                   var ul=document.getElementById('cmtlist1');
