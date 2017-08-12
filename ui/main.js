@@ -53,7 +53,8 @@ request.send(null);
 
 };
 
-
+var cmtInput=document.getElementById('comment1');
+var cmt=cmtInput.value;
 var sbt=document.getElementById('sbt1');
 sbt.onclick=function(){
       var request= new XMLHttpRequest();
@@ -77,9 +78,8 @@ sbt.onclick=function(){
   
 };
 
-var cmtInput=document.getElementById('comment1');
-var cmt=cmtInput.value;
-request.open('GET','http://avineeshcse.imad.hasura-app.io/submit-name?name='+name,true);
+
+request.open('GET','http://avineeshcse.imad.hasura-app.io/article-one',true);
 request.send(null);
 
 };
