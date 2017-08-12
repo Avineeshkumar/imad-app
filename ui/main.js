@@ -24,7 +24,7 @@ sbt.onclick=function(){
 };
 
 
-request.open('GET','http://avineeshcse.imad.hasura-app.io/article-one',true);
+request.open('GET','http://avineeshcse.imad.hasura-app.io',true);
 request.send(null);
 
 };
