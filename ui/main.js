@@ -53,7 +53,7 @@ request.send(null);
 
 };
 
-var cmtInput=document.getElementById('comment1');
+var cmtInput=document.getElementById('comments1');
 var cmt=cmtInput.value;
 var sbt=document.getElementById('sbt1');
 sbt.onclick=function(){
