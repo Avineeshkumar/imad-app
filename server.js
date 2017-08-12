@@ -20,7 +20,16 @@ var articles= {
              </p>  
              <p>
                 This is the content of my first article.This is the content of my first article. 
-             </p>`
+             </p>`,
+    comments:
+             `<h3>Comments</h3>
+             <div class="footer">
+             <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
+             Hey... say something!
+             </textarea>
+    
+             <input type="submit" value="Submit">
+             `
 },
 'article-two':{
     title: 'Article Two/Avineesh',
@@ -28,8 +37,18 @@ var articles= {
     date: 'Aug 5,2017',
     content:
              `<p>
-                 This is the content of my second article.This is the content of my second article.
+                 This is the content of my second article.
+                 This is the content of my second article.
               </p>`
+    comments:
+            `
+            <h3>Comments</h3>
+             <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
+             Hey... say something!
+             </textarea>
+    
+             <input type="submit" value="Submit">
+             `   
 },
 'article-three':{
     title: 'Article Three/Avineesh',
@@ -45,6 +64,15 @@ var articles= {
                <p>
                This is the content of my third article.This is the content of my third article.
                </p>`
+    comments:
+            `<h3>Comments</h3>
+             <div class="footer">
+             <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
+             Hey... say something!
+             </textarea>
+    
+             <input type="submit" value="Submit">
+             `            
 }
 };
 function createTemplate (data) {
@@ -52,6 +80,7 @@ var title=data.title;
 var date=data.date;
 var heading=data.heading;
 var content=data.content;
+var comments=data.comments;
 var htmlTemplate=`
 <html>
 <head>
@@ -75,6 +104,9 @@ var htmlTemplate=`
   </div>
   <div>
       ${content}
+      </div>
+      <div class="footer">
+      ${comments}
       </div>
     </body>
 </html>
