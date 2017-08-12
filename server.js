@@ -22,13 +22,14 @@ var articles= {
                 This is the content of my first article.This is the content of my first article. 
              </p>`,
     comments:
-             `<h3>Comments</h3>
-             <div class="footer">
-             <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
+             `
+             
+             <textarea name="comments" id="comments1" style="font-family:sans-serif;font-size:1.2em;">
              Hey... say something!
              </textarea>
     
-             <input type="submit" value="Submit id="sbt"">
+             <input type="submit" value="Submit" id="sbt1">
+             <ul id="cmtlist1"></ul>
              `
 },
 'article-two':{
@@ -42,12 +43,13 @@ var articles= {
               </p>`,
     comments:
             `
-            <h3>Comments</h3>
-             <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
+            
+             <textarea name="comments" id="comments2" style="font-family:sans-serif;font-size:1.2em;">
              Hey... say something!
              </textarea>
     
-             <input type="submit" value="Submit" id="sbt">
+             <input type="submit" value="Submit" id="sbt2">
+             <ul id="cmtlist2"></ul>
              `   
 },
 'article-three':{
@@ -65,13 +67,14 @@ var articles= {
                This is the content of my third article.This is the content of my third article.
                </p>`,
     comments:
-            `<h3>Comments</h3>
-             <div class="footer">
-             <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
+            `
+             
+             <textarea name="comments" id="comments3" style="font-family:sans-serif;font-size:1.2em;">
              Hey... say something!
              </textarea>
     
-             <input type="submit" value="Submit id="sbt"">
+             <input type="submit" value="Submit id="sbt3"">
+             <ul id="cmtlist3"></ul>
              `            
 }
 };
@@ -105,6 +108,7 @@ var htmlTemplate=`
   <div>
       ${content}
       </div>
+      <h3>Comments</h3>
       <div class="footer">
       ${comments}
       </div>
