@@ -31,20 +31,20 @@ var articles= {
                  This is the content of my second article.
                  This is the content of my second article.
               </p>`
-}
+},
 'article-three':{
     title: 'Article Three/Avineesh',
     heading: 'Article Three',
     date: 'Aug 6,2017',
     content:
-           `<p>
-                This is the content of my first article.This is the content of my first article.
+             `<p>
+                This is the content of my third article.This is the content of my third article.
              </p>
              <p>
-                This is the content of my first article.This is the content of my first article.
-             </p>  
-             <p>
-                This is the content of my first article.This is the content of my first article. 
+                This is the content of my third article.This is the content of my third article.
+             </p>
+                <p>
+                This is the content of my third article.This is the content of my third article.
              </p>`
 }
 };
