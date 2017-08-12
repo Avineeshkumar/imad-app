@@ -64,10 +64,11 @@ sbt.onclick=function(){
       if(request.readyState === XMLHttpRequest.DONE){ 
           
           if(request.status === 200){
-                cmt=JSON.parse(cmt);
+              var cmts=request.responseText;
+                cmts=JSON.parse(cmts);
                   var list='';
                   for(var i=0;i<cmts.length;i++){
-                      list+='<li>'+ cmt[i] +'</li>';
+                      list+='<li>'+ cmts[i] +'</li>';
                   }
                   
                   var ul=document.getElementById('cmtlist1');
